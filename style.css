@@ -1,0 +1,242 @@
+body {
+  background-color: #F7F7F7;
+}
+
+nav {
+  background-color: #521C67;
+  height: 100px;
+}
+
+#nav-title {
+  margin-top: 30px;
+  margin-left: 40px;
+  color: white;
+  font-size: 25px;
+}
+
+.option-box {
+  height: 130px;
+  width: 85%;
+  background-color: white;
+  border: thin solid;
+  border-color: #E6E7E8;
+  padding: 10px;
+}
+
+.option-heading {
+  position: absolute;
+  z-index: 1;
+  bottom: 90px;
+  left: 30px;
+  font-size: 18px;
+}
+
+.option-description {
+  position: absolute;
+  z-index: 1;
+  bottom: 40px;
+  left: 30px;
+  font-size: 12px;
+  width: 200px;
+}
+
+.option-members {
+  position: absolute;
+  z-index: 1;
+  bottom: 10px;
+  left: 30px;
+  font-size: 12px;
+  width: 200px;
+  font-weight: bold;
+}
+
+.option-plus-icon {
+  position: absolute;
+  z-index: 1;
+  bottom: 70px;
+  left: 35%;
+  font-size: 12px;
+  width: 200px;
+  font-weight: bold;
+  color: #DFDFDF;
+}
+
+.option-create-project {
+  position: absolute;
+  z-index: 1;
+  bottom: 40px;
+  left: 23%;
+  font-size: 12px;
+  width: 200px;
+  font-weight: bold;
+  color: #DFDFDF;
+}
+
+.dialog{
+  padding:10px;
+  background-color: white;
+  position:absolute;
+  bottom: 20%;
+  left: 35%;
+  display:none;
+  z-index: 2;
+  border-color: #E6E7E8;
+  color:#cecece;
+  border: solid black thin;
+  width: 350px;
+  height: 480px;
+}
+
+#form-header {
+  padding-bottom: 15px;
+  font-weight: bold;
+  color: black;
+  border-bottom: solid #DFDFDF thin;
+}
+
+label {
+  color: black;
+  margin-top: 10px;
+}
+
+input[type=text]{
+  border:1px solid #333;
+  display:inline-block;
+  margin:5px;
+}
+
+#btn-cancel {
+  color: #521C67;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+}
+
+#btn-ok{
+  border:1px solid #000;
+  background: #521C67;
+  margin:5px;
+  color: white;
+  border-radius: 20px;
+  padding: 8px 12px 8px 12px;
+}
+
+select {
+  width: 100%;
+  height: 30px;
+  background-color: white;
+}
+
+.name-box {
+  height: 80px;
+  width: 95%;
+  background-color: white;
+  border: thin solid;
+  border-color: #E6E7E8;
+  padding: 10px;
+  text-align: center;
+  color: #59446C;
+  font-weight: bold;
+}
+
+.name {
+  margin-top: 10px;
+}
+
+.name-new-mem {
+  margin-top: 10px;
+  color: #CBCBCB;
+}
+
+.name-box-view {
+  margin-top: 30px;
+  height: 80px;
+  width: 95%;
+  background-color: white;
+  border: thin solid;
+  border-color: #E6E7E8;
+  padding: 10px;
+  color: #59446C;
+  font-weight: bold;
+  font-size: 12px;
+  border-left: #64AA8B solid thick
+}
+
+.name-box-icon {
+  margin-top: 30px;
+  height: 80px;
+  width: 95%;
+  background-color: white;
+  border: thin solid;
+  border-color: #E6E7E8;
+  padding: 10px;
+  color: #59446C;
+  font-weight: bold;
+  font-size: 12px;
+  border-left: #DDA609 solid thick
+}
+
+#pub-button-done {
+  background-color: #63A685;
+  border-radius: 20px;
+  height: 18px;
+  width: 60px;
+  font-size: 12px;
+  position: absolute;
+  bottom: 10px;
+  left: 100px;
+  border: none;
+}
+
+#pub-button-hold {
+  background-color: #E3A700;
+  border-radius: 20px;
+  height: 18px;
+  width: 75px;
+  font-size: 12px;
+  position: absolute;
+  bottom: 10px;
+  left: 100px;
+  border: none;
+}
+
+.btn-text, .caret {
+  position: relative;
+  bottom: 5px;
+}
+
+.new-task {
+  height: 70px;
+  width: 95%;
+  background-color: white;
+  border: thin solid;
+  border-color: #E6E7E8;
+  padding: 10px;
+  text-align: center;
+  color: #59446C;
+  font-weight: bold;
+  margin-top: 20px;
+  border: solid #DBDBDB thin;
+}
+
+.create-task {
+  color: #DBDBDB;
+  position: absolute;
+  bottom: 0px;
+  left: 30%;
+}
+
+.task-plus-icon {
+  color: #DFDFDF;
+}
+
+.divider {
+   border-left: thick solid #ff0000;
+}
+
+
+
+

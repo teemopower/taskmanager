@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Publishing</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <nav class="navbar"><p id="nav-title">Publishing</p></nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <div class="name-box"><p class="name">Jason Russell</p></div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="name-box"><p class="name">Julia Coleman</p></div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="name-box"><p class="name">Rachel Gonzalez</p></div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="name-box"><p class="name-new-mem">Add New Member</p></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <div class="name-box-view">
+          <p class="name">Publishing View</p>
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" id="pub-button-done" type="button" data-toggle="dropdown">
+            <span class="btn-text">Done</span>
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Done</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">On Hold</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">In Process</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sent</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Schedule</a></li>  
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="name-box-icon">
+          <p class="name">Icon Creation</p>
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" id="pub-button-hold" type="button" data-toggle="dropdown"><span class="btn-text">On Hold</span>
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Done</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">On Hold</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">In Process</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sent</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Schedule</a></li>    
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="name-box-view">
+          <p class="name">Publishing View</p>
+          <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle" id="pub-button-done" type="button" data-toggle="dropdown"><span class="btn-text">Done</span>
+              <span class="caret"></span></button>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Done</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">On Hold</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">In Process</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sent</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Schedule</a></li>  
+              </ul>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <div class="new-task">
+        <p class="task-plus-icon"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></p>
+        <p class="create-task">Create New Task</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="new-task">
+          <p class="task-plus-icon"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></p>
+          <p class="create-task">Create New Task</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="new-task">
+          <p class="task-plus-icon"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i></p>
+          <p class="create-task">Create New Task</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+      </div>
+    </div>
+  </div>
+
+  <!-- Dialog Box -->
+    <div class="dialog" id="myform-task">
+      <p id="form-header">Create Task</p>
+      <form>
+        <label>Title</label><br>
+        <input type="text" id="form-name" class="form-control" placeholder="Project Title...">
+        <br><label>Description</label><br>
+        <textarea rows="5" id="form-description" class="form-control" placeholder="Project Description..."></textarea>
+        <br><label>Status</label><br>
+        
+        <select>
+          <option value="select">Select</option>
+          <option value="person">Done</option>
+          <option value="person">On Hold</option>
+          <option value="person">Sent</option>
+          <option value="person">Schedule</option>
+        </select>
+        <hr>
+        <div align="center">
+          <input type="button" value="Cancel" id="btn-cancel">
+          <input type="button" value="Create" id="btn-ok">
+        </div>
+      </form>
+    </div>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+   <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
